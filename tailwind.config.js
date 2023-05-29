@@ -8,10 +8,26 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'Tomato': 'hsl(4, 100%, 67%)',
+        'Dark-Slate-Grey': 'hsl(234, 29%, 20%)',
+        'Charcoal-Grey': 'hsl(235, 18%, 26%)',
+        'Grey': 'hsl(231, 7%, 60%)',
+        'White': 'hsl(0, 0%, 100%)',
+      },
+      fontSize: {
+        'lg': ['40px', '40px'],
+        'md': ['16px', '24px'],
+        'sm': ['12px', '18px'],
+      },
+      fontWeight: {
+        'reg': '400',
+        'bold': '700'
+      },
+      listStyleImage: {
+        'check': "url('../../public/icon-list.svg')"
+      }
     },
   },
   plugins: [],
