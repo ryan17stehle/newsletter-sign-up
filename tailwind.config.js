@@ -15,6 +15,7 @@ module.exports = {
         'Charcoal-Grey': 'hsl(235, 18%, 26%)',
         'Grey': 'hsl(231, 7%, 60%)',
         'White': 'hsl(0, 0%, 100%)',
+        'Error': 'rgba(255, 97, 85, 0.15)'
       },
       fontSize: {
         'lg': ['40px', '40px'],

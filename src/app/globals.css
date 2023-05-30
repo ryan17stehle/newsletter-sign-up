@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+#btn-submit:active {
+    box-shadow: 0px 16px 32px 0px #FF615580;
+    background-image: linear-gradient(204.47deg, #FF6A3A 0%, #FF527B 100%);
+}
