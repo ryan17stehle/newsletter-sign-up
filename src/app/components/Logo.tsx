@@ -8,7 +8,7 @@ export default function Logo() {
         <Image
           src={SignUpMobile}
           alt="red-orange background with a chart and score displayed on top"
-          className="max-w-full rounded-2xl md:hidden"
+          className="max-w-full w-full rounded-2xl md:hidden"
         />
         <Image
           src={SignUpDesktop}

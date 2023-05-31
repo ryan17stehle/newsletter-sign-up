@@ -4,22 +4,24 @@ import { SubmitHandler, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { UserEmailSchema } from '../../../models/Email'
 import type { UserEmail } from '../../../models/Email';
+import { useRouter } from 'next/navigation';
 
 export default function Form() {
     const {
         register,
         handleSubmit,
-        trigger,
         formState: {
             errors, 
-            isValid
         }
     } = useForm<UserEmail>({
         resolver: zodResolver(UserEmailSchema)
     })
 
+    const router = useRouter()
+
     const onSubmit: SubmitHandler<UserEmail> = (data) => {
         console.log(data)
+        router.push(`../confirm`)
     }
 
     return (
